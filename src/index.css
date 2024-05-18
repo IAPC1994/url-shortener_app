@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply bg-gradient-to-t from-purple-800 to-slate-800 text-white
+}
+
+.btn-primary{
+    @apply bg-purple-600 hover:bg-purple-500 rounded-md shadow-md text-white font-bold p-2
+}
+
+.btn-disabled{
+    @apply bg-gray-300 text-gray-400 rounded-md shadow-md font-bold p-2
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+  
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fade-in {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
